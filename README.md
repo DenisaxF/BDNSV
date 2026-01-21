@@ -30,6 +30,9 @@ Order → Products → an order can contain multiple products (stored as an arra
 Order → Employee → an employee can process multiple orders
 
 # Schema Design Strategies
+
+<img width="559" height="650" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/fe857d21-f3ba-46e0-9e50-a0232c6fe6f5" />
+
 ## Referencing (Implemented)
 
 orders.userId → reference to users._id
@@ -55,6 +58,4 @@ Advantages: fast reads, no joins needed
 Disadvantages: data duplication, harder to maintain
 
 Conclusion: Referencing was chosen for this project for better scalability and maintainability.
-
-<img width="559" height="650" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/fe857d21-f3ba-46e0-9e50-a0232c6fe6f5" />
 
