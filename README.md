@@ -1,6 +1,6 @@
 ## System Architecture
 
-Client: Python script / notebook
+# Client: Python script / notebook
 
 Database: MongoDB Atlas (cloud)
 
