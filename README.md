@@ -1,6 +1,6 @@
-## System Architecture
+# System Architecture
 
-# Client: Python script / notebook
+Client: Python script / notebook
 
 Database: MongoDB Atlas (cloud)
 
@@ -10,8 +10,8 @@ Driver: PyMongo
 
 Diagrams: Lucidchart (for schema visualization)
 
-🗂️ Data Modeling & Collection Organization
-📘 Entities
+# Data Modeling & Collection Organization
+## Entities
 
 User – customers
 
@@ -21,7 +21,7 @@ Product – products available in the store
 
 Order – orders placed by users
 
-🔗 Relationships
+# Relationships
 
 User → Orders → a user can place multiple orders
 
@@ -29,8 +29,8 @@ Order → Products → an order can contain multiple products (stored as an arra
 
 Order → Employee → an employee can process multiple orders
 
-🧩 Schema Design Strategies
-🔹 Referencing (Implemented)
+# Schema Design Strategies
+## Referencing (Implemented)
 
 orders.userId → reference to users._id
 
@@ -41,7 +41,7 @@ orders.products[i].productId → reference to products._id
 Advantages: scalable, consistent data, smaller documents
 Disadvantages: joins/aggregations are needed for combining data
 
-🔹 Embedding (Alternative Model)
+## Embedding (Alternative Model)
 
 All product details could be embedded inside the orders collection:
 
